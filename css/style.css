@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bgColor{
+    background: linear-gradient(#000000, #D3D3D3)
+}
+
+.logoImg{
+    width: 10%;
+    height: auto;
+    justify-content: left;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.navText{
+    font-family: 'Lora', serif;
+    font-size: 2.3rem;
+    color: green;
+}
+
+header{
+    background-image: url(../multimedia/img/darkness.jpg);
+    background-attachment: scroll;
+}
+
+header nav{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+
+.bannerFormat{
+    width: 98%;
+    height: auto;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.h1Index{
+    font-family: 'Silkscreen', cursive;
+    font-size: 8rem;
+    color: rgb(151, 149, 150);
+    padding: 6px;
+    text-align: center;
+    text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+}
+
+.h2Index{
+    font-family: 'Silkscreen', cursive;
+    font-size: 4rem;
+    color: rgb(17, 1, 13);
+    padding: 4px;
+    text-align: center;
+    text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+}
+
+.carrouselFormat{
+    width: 80%;
+    height: auto;
+    margin: 2px;
+    padding-top: 20px;
+    padding-left: 10%;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+.sectionHeight{
+    max-height: 500px;
+}
+
+footer{
+    background: linear-gradient(#D3D3D3, #3b1759);
+    width: 100%;
+    margin: auto;
+}
+
+.footerRedes{
+    top: 35px;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.footerText{
+    font-family: 'Lora', serif;
+    font-size: 1.7rem;
+    position: relative;
+    color: black;
+}
+
+.socialMediaIcons{
+    position: relative;
+    bottom: 5%;
+    left: 5%;
+    padding: 2px;
+    margin-left: 10px;
+    width: 2.5%;
+    height: auto;
+    padding: 2px;
+}
+
+footer nav{
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    bottom:5rem;
+}
+
+h4{
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color:rgb(19, 18, 18);
+    padding: 3px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.titleText{
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    color:  rgb(151, 149, 150);
+    padding: 4px;
+    text-align: center;
+    text-shadow: 8px 6px 8px rgba(69, 67, 66, 0.545);
+}
+
+.pFormat{
+    display: block;
+    position: absolute;
+    top: 109rem;
+    left: 40%;
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: white;
+    font-style: italic;
+    text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    margin-left: 1%;
+}
+
+.imgSobreMi{
+    width: 33%;
+    height: auto;
+    margin: 1px;
+    padding-top: 8px;
+    padding-left: 5%;
+}
+
+.toolsText{
+    display: inline-block;
+    position: relative;
+    font-family: 'Silkscreen', cursive;
+    font-size: 2.5rem;
+    text-shadow: 3px 4px 6px rgba(138, 14, 107, 0.8);
+    text-align: center;
+}
+
+.projectName{
+    position: relative;
+    font-family: 'Silkscreen', cursive;
+    font-size: 2rem;
+    text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    text-align: center;
+    top: 4rem;
+    color:white;
+    padding: 5px;
+}
+
+video{
+    width: 500px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.links{
+    font-family: 'Merriweather', serif;
+    color: green;
+    font-size: 2rem;
+    text-shadow: 3px 4px 6px rgba(10, 98, 41, 0.8);
+    position: relative;
+    bottom: 3rem;
+    text-align: center;
+    padding: 5px;
+    left: 2%;
+}
+
+.galleryContainer{
+    padding: 10px;
+    display: flex;
+}
+
+figure{
+    justify-content: space-between;
+}
+
+.galleryFormat{
+    width: 90%;
+    height: auto;
+    margin: 2px;
+    padding: 3px;
+    /* padding-top: 20px;
+    padding-left: 10%;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%; */
+}
+
+figure a{
+    font-family: 'Merriweather', serif;
+    color: green;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    text-shadow: 2px 3px 4px rgba(10, 98, 41, 0.8);
+}
+
+.containerForm{
+    display: flex;
+    padding: 20px;
+    margin: 50px;
+}
+
+.formDir{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.buttons{
+    width: auto;
+    height: auto;
+}
+
+form label{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: white;
+}
+
+input{
+    width: 450px;
+    height: auto;
+}
+
+iframe{
+    display: inline-block;
+    position: relative;
+    bottom: 45rem;
+    left: 48%;
+    margin: 20px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
