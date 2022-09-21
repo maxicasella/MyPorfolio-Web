@@ -5,53 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maximiliano Casella - Game Developer | 3D Artist</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shorcut icon" href="multimedia/img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <img src="multimedia/img/logo.png" alt="logo Maximiliano Casella marca" class="logoImg">
-        </a>
-        
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="navText">Inicio</a>
-                </li>
-                <li>
-                    <a href="src/sobre-mi.html" class="navText">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="src/galeria.html" class="navText">Galeria</a>
-                </li>
-                <li>
-                    <a href="src/proyectos.html" class="navText">Proyectos</a>
-                </li>
-                <li>
-                    <a href="src/herramientas.html" class="navText">Herramientas</a>
-                </li>
-                <li>
-                    <a href="src/contacto.html" class="navText">Contacto</a>
-                </li>
-            </ul>
+    <header class="bgTop">
+        <!--Inicio nav-->
+        <nav class="navbar navbar-expand-lg bgTop">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="multimedia/img/logo.png" alt="logo Maximiliano Casella marca">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link  navText" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="src/sobre-mi.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="src/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="src/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="src/herramientas.html">Herramientas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="src/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img src="multimedia/img/banner.jpg" alt="banner" class="bannerFormat">
+        <!--Cierro nav-->
+        <img src="multimedia/img/banner.png" alt="banner" class="w-100">
     </header>
     
-    <div class="bgColor">
-        <section>
-            <h1 class="h1Index">Maximiliano Casella</h1>
-            <h2 class="h2Index">Desarrollador de videojuegos.</h2>
-            <h2 class="h2Index">Artista 3D.</h2>
-        </section>   
-        <!--Carrusel de imagenes-->
-        <div>
-            <img class="carrouselFormat" src="multimedia/img/Dungeon1.png" alt ="mazmorra celta de la epoca medieval">
-            <img src="m" alt="">
+    <main class="container-fluid bgColor">
+        <section class="py-3">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="h1Index">Maximiliano Casella</h1>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h2 class="h2Index">Desarrollador de videojuegos.</h2>
+                <h2 class="h2Index">Artista 3D.</h2>
+            </div>
+        </section>
+        <!--Inicio Carrusel de imagenes-->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
         </div>
-    </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Cierro Carrusel de imagenes-->
+    </main>
     
     <footer>
         <div>
@@ -89,5 +137,7 @@
         </nav>
         <h4>© Desarrolado por Maximiliano Casella | 2022</h4>
     </footer>
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
