@@ -51,7 +51,7 @@ li{
 
 .h2Index{
     font-family: 'Silkscreen', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     color: rgb(17, 1, 13);
     padding: 4px;
     text-align: center;
@@ -76,6 +76,10 @@ footer{
     background: linear-gradient(#D3D3D3, #3b1759);
     width: 100%;
     margin: auto;
+}
+
+.justifyCenter{
+    justify-items: center;
 }
 
 .footerRedes{
