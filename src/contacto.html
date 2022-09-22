@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg bgTop">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../multimedia/img/logo.png" alt="logo Maximiliano Casella marca">
+                    <img src="../multimedia/img/logo.png" class="logoImg" alt="logo Maximiliano Casella marca">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,25 +49,65 @@
         <img src="../multimedia/img/banner.png" alt="banner" class="w-100">
     </header> 
     
-    <div class="bgColor">
-        <h2 class="titleText">Contacto</h2>
-        <section>
-            <div>
-                <form class="containerForm formDir">
-                    <label for="nombre-apellido">Nombre y apellido</label>
-                    <input type="text" id="name" placeholder="Ingrese nombre y apellido" required>
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Ingrese su e-mail" required>     
-                    <label for="consulta">Consulta</label>  
-                    <textarea name="comentario" id="comentario" cols="60" rows="15" placeholder="Ingrese su consulta aqui" required></textarea>
-                    <input type="submit" value="Enviar" class="buttons">
-                </form>
-            </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26311.945709970765!2d-58.541555721808976!3d-34.47769641256114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd891437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661999948837!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <main class="container-fluid bgColor">
+        <section class="py-3">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h2 class="titleText">Contacto</h2>
             </div>
         </section>
-    </div>
+        
+        <!--Inicio Formulario-->
+
+        <div class="container-fluid formulario py-2" id="contacto">
+            <div class="row form-format vertical">
+                <div class="col-12 col-md-6 mb-4 justify-content-md-center">
+                    <div class="form-format-align">
+                        <h2>Formulario de contacto </h2>
+                    </div>
+                    <form action="mailto:maxicasella@gmail.com">
+                        <fieldset class="py-3">
+                            <div class="row justify-content-md-center">
+                                <div class="col-12 col-md-5">
+                                    <label class="form-label" for="nombres">Nombre:</label>
+                                    <input class="form-control mb-3" type="text" name="nombres" id="nombres" placeholder="Nombre..">
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <label class="form-label" for="email">Email:</label>
+                                    <input class="form-control mb-3" type="email" name="email" id="email" placeholder="Apellido..">
+                                </div>
+                                <div class="col-12 col-md-10">
+                                    <label class="form-label" for="country">País:</label>
+                                    <select class="form-control form-select mb-3" id="country" name="country">
+                                        <option value="australia">Argentina</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="usa">Estados Unidos</option>
+                                        <option value="World">Otros países</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-10">
+                                    <label class="form-label" for="mensaje">Mensaje:</label>
+                                    <textarea class="form-control mb-3" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje.." cols="30"    rows="10" maxlength="750"></textarea>
+                                </div>
+                            </div>   
+                        </fieldset>
+                        <div class="form-format-align">
+                            <button class="btn btn-light btn-outline-dark btn-lg" data-bs-toggle="tooltip" title="Enviar" type="submit" value="enviar" >Enviar</button>    
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-12 col-md-6 mt-3 justify-content-md-center">
+                    <div class="form-format-align">
+                        <h2>Ubicación</h2>
+                        <p class="text-white h5">Zona Norte - Buenos Aires</p>
+                    </div>
+                    <div id="contact" class="ratio ratio-4x3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11063.828539173384!2d-58.51595935326799!3d-34.470016980653654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1638061540273!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </main>
     
         <!--Inicio footer-->
         <footer class="container-fluid navText">
@@ -116,12 +156,12 @@
                         </li>
                     </ul>
                 </div> 
-            </div>
-            <div class="col-xs-12">
-                <h4 class="text-white bg-dark h5 text-center p-3">© Desarrolado por Maximiliano Casella | 2022</h4>
+                <div class="col-xs-12">
+                    <h4 class="text-white bg-dark h5 text-center p-3">© Desarrolado por Maximiliano Casella | 2022</h4>
+                </div>
             </div>
         </footer>
         <!--Cierro footer-->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -9,16 +9,15 @@ html{
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
 }
 
 body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
 }
-
+/*Backgrounds*/
 .bgColor{
     background: linear-gradient(#607AA7,#4B5579);
 }
@@ -29,6 +28,10 @@ body{
 }
 
 /*Nav*/
+.logoImg{
+    height: auto;
+    width: auto;
+}
 .navText{
     font-family: 'Lora', serif;
     font-size: 2rem;
@@ -61,34 +64,17 @@ li{
     text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
 }
 
-.carrouselFormat{
-    width: 80%;
-    height: auto;
-    margin: 2px;
-    padding-top: 20px;
-    padding-left: 10%;
-    border-top-right-radius: 2%;
-    border-top-left-radius: 2%;
-}
-
 .sectionHeight{
     max-height: 500px;
 }
 
 /*Footer*/
+footer{
+    vertical-align : top
+}
 
 #footerP{
     font-size: 3rem;
-}
-
-h4{
-    font-family: 'Lora', serif;
-    font-size: 1.5rem;
-    color:rgb(19, 18, 18);
-    padding: 3px;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 20px;
 }
 
 h5{
@@ -103,9 +89,9 @@ h5{
 }
 
 .titleText{
-    font-family: 'Merriweather', serif;
-    font-size: 4rem;
-    color:  rgb(151, 149, 150);
+    font-family: 'Silkscreen', cursive;
+    font-size: 6rem;
+    color:rgb(242, 241, 241);
     padding: 4px;
     text-align: center;
     text-shadow: 8px 6px 8px rgba(69, 67, 66, 0.545);
@@ -195,45 +181,49 @@ figure a{
 }
 
 /*Formulario*/
-.containerForm{
+.vertical{
     display: flex;
-    padding: 20px;
-    margin: 50px;
+    align-items: center;
 }
 
-.formDir{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+.form-format{
+    border-radius: 5px;
+    background: linear-gradient(#4B5579,#131728);
+    margin: auto;
+    padding: 15px;
 }
 
-.buttons{
-    width: auto;
-    height: auto;
+.form-format-align{
+    text-align: center;
 }
 
-form label{
+.formulario{
+    padding: 0;
+}
+
+.formulario h2{
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
+}
+
+.formulario label{
     font-family: 'Lora', serif;
     font-size: 2rem;
     color: white;
+    letter-spacing: 5px;
+    text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
 }
 
-input{
-    width: 450px;
-    height: auto;
-}
-
-iframe{
-    display: inline-block;
-    position: relative;
-    bottom: 45rem;
-    left: 48%;
-    margin: 20px;
-    padding: 5px;
-}
 
 /*Ajustes medidas dispositivos */
 @media (max-width: 768px){
+    .logoImg{
+        width: 75%;
+    }
+
     .navText{
         font-family: 'Lora', serif;
         font-size: 1.5rem;
@@ -258,6 +248,10 @@ iframe{
         text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
     }
 
+    .titleText{
+        font-size: 4rem;
+    }
+
     li{
         padding: 5px;
     }
@@ -268,6 +262,10 @@ iframe{
 }
 
 @media (max-width: 992px){
+    .logoImg{
+        width: 50%;
+    }
+
     .navText{
         font-family: 'Lora', serif;
         font-size: 1.5rem;
@@ -290,6 +288,10 @@ iframe{
         padding: 4px;
         text-align: center;
         text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+
+    .titleText{
+        font-size: 5rem;
     }
     
     li{
