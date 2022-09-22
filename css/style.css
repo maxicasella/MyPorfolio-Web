@@ -31,8 +31,9 @@ body{
 /*Nav*/
 .navText{
     font-family: 'Lora', serif;
-    font-size: 2.3rem;
-    color: rgb(226, 216, 216);
+    font-size: 2rem;
+    text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
+    color:rgb(242, 241, 241)
 }
 
 li{
@@ -75,41 +76,9 @@ li{
 }
 
 /*Footer*/
-footer{
-    background: linear-gradient(#4B5579, #131728);
-    width: 100%;
-    margin: auto;
-}
 
-.footerRedes{
-    top: 35px;
-    padding: 2px;
-    margin-left: 10px;
-}
-
-.footerText{
-    font-family: 'Lora', serif;
-    font-size: 1.7rem;
-    position: relative;
-    color: black;
-}
-
-.socialMediaIcons{
-    position: relative;
-    bottom: 5%;
-    left: 5%;
-    padding: 2px;
-    margin-left: 10px;
-    width: 2.5%;
-    height: auto;
-    padding: 2px;
-}
-
-footer nav{
-    display: inline-block;
-    position: relative;
-    left: 40%;
-    bottom:5rem;
+#footerP{
+    font-size: 3rem;
 }
 
 h4{
@@ -292,6 +261,10 @@ iframe{
     li{
         padding: 5px;
     }
+
+    #footerP{
+    font-size: 2rem;
+    }
 }
 
 @media (max-width: 992px){
@@ -322,6 +295,10 @@ iframe{
     li{
         padding: 5px;
     }
+
+    #footerP{
+        font-size: 2rem;
+        }
 }
 
 
