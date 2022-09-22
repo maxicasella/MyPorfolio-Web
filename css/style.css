@@ -20,18 +20,19 @@ body{
 }
 
 .bgColor{
-    background: rgb(96,122,167);
+    background: linear-gradient(#607AA7,#4B5579);
 }
 
+.bgTop{
+    background:linear-gradient(#799BC5,#607AA7);
+    text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
+}
+
+/*Nav*/
 .navText{
     font-family: 'Lora', serif;
     font-size: 2.3rem;
     color: rgb(226, 216, 216);
-}
-
-.bgTop{
-    background-color:rgb(121, 155, 197);
-    text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
 }
 
 li{
@@ -40,6 +41,7 @@ li{
     padding: 10px;
 }
 
+/*Index*/
 .h1Index{
     font-family: 'Silkscreen', cursive;
     font-size: 6rem;
@@ -72,14 +74,11 @@ li{
     max-height: 500px;
 }
 
+/*Footer*/
 footer{
-    background: linear-gradient(#D3D3D3, #3b1759);
+    background: linear-gradient(#4B5579, #131728);
     width: 100%;
     margin: auto;
-}
-
-.justifyCenter{
-    justify-items: center;
 }
 
 .footerRedes{
@@ -121,6 +120,17 @@ h4{
     text-align: center;
     padding-top: 5px;
     padding-bottom: 20px;
+}
+
+h5{
+    font-size: 3rem;
+}
+
+/*Index Carrousel*/
+.textCarrousel{
+    font-size: 1.5rem;
+    padding: 5px;
+    padding-bottom: 10px;
 }
 
 .titleText{
@@ -205,10 +215,6 @@ figure{
     height: auto;
     margin: 2px;
     padding: 3px;
-    /* padding-top: 20px;
-    padding-left: 10%;
-    border-top-right-radius: 2%;
-    border-top-left-radius: 2%; */
 }
 
 figure a{
@@ -219,6 +225,7 @@ figure a{
     text-shadow: 2px 3px 4px rgba(10, 98, 41, 0.8);
 }
 
+/*Formulario*/
 .containerForm{
     display: flex;
     padding: 20px;
@@ -254,6 +261,67 @@ iframe{
     left: 48%;
     margin: 20px;
     padding: 5px;
+}
+
+/*Ajustes medidas dispositivos */
+@media (max-width: 768px){
+    .navText{
+        font-family: 'Lora', serif;
+        font-size: 1.5rem;
+        color: rgb(226, 216, 216);
+    }
+    
+    .h1Index{
+        font-family: 'Silkscreen', cursive;
+        font-size: 4rem;
+        color: rgb(151, 149, 150);
+        padding: 6px;
+        text-align: center;
+        text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+    
+    .h2Index{
+        font-family: 'Silkscreen', cursive;
+        font-size: 2.5rem;
+        color: rgb(17, 1, 13);
+        padding: 4px;
+        text-align: center;
+        text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+
+    li{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 992px){
+    .navText{
+        font-family: 'Lora', serif;
+        font-size: 1.5rem;
+        color: rgb(226, 216, 216);
+    }
+    
+    .h1Index{
+        font-family: 'Silkscreen', cursive;
+        font-size: 5rem;
+        color: rgb(151, 149, 150);
+        padding: 6px;
+        text-align: center;
+        text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+    
+    .h2Index{
+        font-family: 'Silkscreen', cursive;
+        font-size: 3rem;
+        color: rgb(17, 1, 13);
+        padding: 4px;
+        text-align: center;
+        text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+    
+    li{
+        padding: 5px;
+    }
 }
 
 
