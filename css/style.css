@@ -19,11 +19,11 @@ body{
 }
 /*Backgrounds*/
 .bgColor{
-    background: linear-gradient(#607AA7,#4B5579);
+    background: linear-gradient(#7aa5da,#e9eaf0);
 }
 
 .bgTop{
-    background:linear-gradient(#799BC5,#607AA7);
+    background:linear-gradient(#37485e,#607AA7);
     text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
 }
 
@@ -217,7 +217,32 @@ figure a{
     text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
 }
 
+/*Tarjetas*/
+.card {
+    height: 120px;
+    width: 400px;
+}
 
+.cardFormat{
+    border-radius: 5px;
+    background: linear-gradient(#4B5579,#131728);
+    margin: auto;
+}
+
+.card:hover{
+    background: rgb(181, 229, 243);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.01);
+}
+
+.titleCard{
+
+}
+
+.textCard{
+
+}
 /*Ajustes medidas dispositivos */
 @media (max-width: 768px){
     .logoImg{
@@ -254,6 +279,11 @@ figure a{
 
     li{
         padding: 5px;
+    }
+
+    .card {
+        height: 120px;
+        width: 300px;
     }
 
     #footerP{
@@ -298,10 +328,30 @@ figure a{
         padding: 5px;
     }
 
+    .card {
+        height: 150px;
+        width: 250px;
+    }
+
     #footerP{
         font-size: 2rem;
         }
 }
+
+@media (min-width: 1400px){
+    .card {
+        height: 120px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1750px){
+    .card {
+        height: 120px;
+        width: 400px;
+    }
+}
+
 
 
 
