@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 html{
     font-size: 62.5%;
@@ -68,19 +69,6 @@ li{
     max-height: 500px;
 }
 
-/*Footer*/
-footer{
-    vertical-align : top
-}
-
-#footerP{
-    font-size: 3rem;
-}
-
-h5{
-    font-size: 3rem;
-}
-
 /*Index Carrousel*/
 .textCarrousel{
     font-size: 1.5rem;
@@ -100,15 +88,16 @@ h5{
 .pFormat{
     display: block;
     position: absolute;
-    top: 109rem;
-    left: 40%;
+    top: 95rem;
+    left: 30%;
     font-family: 'Merriweather', serif;
     font-size: 2rem;
-    color: white;
+    color: rgb(6, 6, 6);
     font-style: italic;
     text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
     margin-left: 1%;
 }
+
 
 .imgSobreMi{
     width: 33%;
@@ -129,12 +118,12 @@ h5{
 
 .projectName{
     position: relative;
-    font-family: 'Silkscreen', cursive;
+    font-family: 'Ubuntu', serif;
     font-size: 2rem;
     text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
     text-align: center;
     top: 4rem;
-    color:white;
+    color:black;
     padding: 5px;
 }
 
@@ -218,10 +207,6 @@ figure a{
 }
 
 /*Tarjetas*/
-.card {
-    height: 120px;
-    width: 400px;
-}
 
 .cardFormat{
     border-radius: 5px;
@@ -236,13 +221,48 @@ figure a{
     transform: scale(1.01);
 }
 
-.titleCard{
-
+.card-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: black;
 }
 
-.textCard{
-
+.card-text{
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
 }
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+/*Footer*/
+footer{
+    vertical-align : top
+}
+
+#footerP{
+    font-size: 3rem;
+}
+
+h5{
+    font-size: 3rem;
+}
+
+.footerLink{
+    font-family: 'Ubuntu',serif;
+    color: white;
+}
+
+.footerLink:hover{
+    color: rgb(91, 158, 179);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: scale(1.01);
+}
+
+
 /*Ajustes medidas dispositivos */
 @media (max-width: 768px){
     .logoImg{
@@ -329,13 +349,20 @@ figure a{
     }
 
     .card {
-        height: 150px;
-        width: 250px;
+        height: 120px;
+        width: 260px;
     }
 
     #footerP{
         font-size: 2rem;
         }
+}
+
+@media (min-width: 992px) {
+    .card {
+        height: 120px;
+        width: 250px;
+    }
 }
 
 @media (min-width: 1400px){
