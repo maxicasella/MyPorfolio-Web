@@ -93,7 +93,7 @@ li{
     text-shadow: 8px 6px 8px rgba(69, 67, 66, 0.545);
 }
 
-/*Sobre mi - Galeria - Proyectos*/
+/*Sobre mi - Proyectos*/
 .pFormat{
     font-family: 'Merriweather', serif;
     font-size: 2rem;
@@ -124,29 +124,28 @@ li{
     text-shadow: 3px 4px 6px rgba(17, 17, 199, 0.579);
 }
 
-.galleryContainer{
-    padding: 10px;
-    display: flex;
+/* Galeria */
+.bgCard{
+    background-color:rgba(222, 202, 202, 0.62);
+}
+.cardName{
+    font-family: 'Silkscreen', cursive;
+    font-size: 3rem;
+    color: rgb(40, 145, 210);
+    text-shadow: 3px 4px 6px rgba(124, 124, 124, 0.696);
 }
 
-figure{
-    justify-content: space-between;
-}
-
-.galleryFormat{
-    width: 90%;
-    height: auto;
-    margin: 2px;
-    padding: 3px;
-}
-
-figure a{
-    font-family: 'Merriweather', serif;
-    color: green;
-    font-variant: small-caps;
+.cardText{
+    font-family: 'Ubuntu', serif;
     font-size: 1.5rem;
-    text-shadow: 2px 3px 4px rgba(10, 98, 41, 0.8);
-    text-decoration: none;
+    color:black;
+}
+
+.galleryLinks{
+    font-family: 'Lora', serif;;
+    color: rgb(0, 4, 6);
+    font-size: 2rem;
+    text-shadow: 3px 4px 6px rgba(123, 123, 132, 0.579);
 }
 
 /*Formulario*/
