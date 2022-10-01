@@ -1,0 +1,40 @@
+@import "_vars";
+@import "_fonts";
+
+/*Formulario*/
+.vertical{
+    display: flex;
+    align-items: center;
+}
+
+.form-format{
+    border-radius: 5px;
+    background: $bgSectionsColor;
+    margin: auto;
+    padding: 15px;
+}
+
+.form-format-align{
+    text-align: center;
+}
+
+.formulario{
+    padding: 0;
+        h2{
+            font-family: $loraFont;
+            font-size: $mainTextFontSize-lg;
+            color: $thirdColor;
+            letter-spacing: 5px;
+            text-shadow: $darkShadow;
+        }
+}
+
+.formulario{
+    label{
+        font-family: $loraFont;
+        font-size: $secondaryFontSize-lg;
+        color: $thirdColor;
+        letter-spacing: 5px;
+        text-shadow: $darkShadow;
+    }
+}

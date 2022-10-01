@@ -1,0 +1,37 @@
+@import "_vars";
+@import "_fonts";
+
+/*Index*/
+.h1Index{
+    font-family: $silkscreenFont;
+    font-size: $indexH1Size-lg;
+    color: $mainColor;
+    padding: 6px;
+    text-align: center;
+    text-shadow: $indexTitleShadow;
+}
+
+.h2Index{
+    font-family: $silkscreenFont;
+    font-size: $indexH2Size-lg;
+    color: $secondaryColor;
+    padding: 4px;
+    text-align: center;
+    text-shadow: $indexTitleShadow;
+}
+
+/*Index Carrousel*/
+.textCarrousel{
+    font-size: $thirdTextFontSize-lg;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.titleText{
+    font-family: $ubuntuSerifFont;
+    font-size: $titlesFontSize-lg;
+    color: $mainColor;
+    padding: 4px;
+    text-align: center;
+    text-shadow: $titlesShadow;
+}

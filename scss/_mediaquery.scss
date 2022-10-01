@@ -1,0 +1,206 @@
+@import "_vars";
+@import "_fonts";
+
+/*Ajustes medidas dispositivos */
+@media (max-width: 768px){
+    
+    .logoImg{
+        width: 75%;
+    }
+
+    .navText{
+        font-family: $loraFont;
+        font-size: $navFontSize-sm-md;
+        // color: rgb(226, 216, 216);
+            &:hover{
+                color: $navHoverColor;
+                cursor: pointer;
+                transition: all 0.05s ease;
+                transform: scale(0.98);
+                animation:slide-top .5s 
+                cubic-bezier(.25,.46,.45,.94) both
+            }
+    }
+
+    .h1Index{
+        font-family: $silkscreenFont;
+        font-size: $indexH1Size-sm;
+        // color: rgb(220, 217, 218);
+        padding: 6px;
+        text-align: center;
+        // text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+    
+    .h2Index{
+        font-family: $silkscreenFont;
+        font-size: $indexH2Size-sm;
+        // color: rgb(17, 1, 13);
+        padding: 4px;
+        text-align: center;
+        // text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+
+    .titleText{
+        font-size: $titlesFontSize-sm;
+    }
+
+    .sobreMiText{
+        font-family: $merriweatherFont;
+        font-size: $textsFontSize-sm;
+        // color: rgb(6, 6, 6);
+        font-style: italic;
+        // text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+
+    video{
+        width: 90%;
+    }
+
+    ul{
+        li{
+            padding: 5px;
+        }
+    }
+
+    .card {
+        height: 150px;
+        width: 400px;
+    }
+
+    #footerP{
+    font-size: $navFontSize-sm-md;
+    }
+}
+
+@media (max-width: 992px){
+    .logoImg{
+        width: 50%;
+    }
+
+    .navText{
+        font-family: $loraFont;
+        font-size: $navFontSize-sm-md;
+        // color: rgb(226, 216, 216);
+            &:hover{
+        // color: rgb(91, 158, 179);
+        cursor: pointer;
+        transition: all 0.05s ease;
+        transform: scale(0.98);
+            }
+    }
+
+    .h1Index{
+        font-family: $silkscreenFont;
+        font-size: $indexH1Size-md;
+        // color: rgb(220, 217, 218);
+        padding: 6px;
+        text-align: center;
+        // text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+    
+    .h2Index{
+        font-family: $silkscreenFont;
+        font-size: $indexH2Size-md;
+        // color: rgb(17, 1, 13);
+        padding: 4px;
+        text-align: center;
+        // text-shadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+    }
+
+    .titleText{
+        font-size: $titlesFontSize-md;
+    }
+    
+    ul{
+        li{
+            padding: 5px;
+        }
+    }
+
+    .card {
+        height: 120px;
+        width: 260px;
+    }
+    
+    .card-title{
+        font-family: $ubuntuSansFont;
+        font-size: $secondaryFontSize-lg;
+        // color: black;
+    }
+    
+    .card-text{
+        font-family: $loraFont;
+        font-size: $cardTextFontSize-lg;
+    }
+
+    #footerP{
+        font-size: $secondaryFontSize-lg;
+        }
+}
+
+@media (min-width: 992px) {
+    .card {
+        height: 120px;
+        width: 250px;
+    }
+
+    .card-title{
+        font-family: $ubuntuSansFont;
+        font-size: $secondaryFontSize-lg;
+        // color: black;
+    }
+    
+    .card-text{
+        font-family: $loraFont;
+        font-size: $cardTextFontSize-lg;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    #cv{
+        position: relative;
+        left: 10%;
+    }
+}
+
+@media (min-width: 1400px){
+    .card {
+        height: 120px;
+        width: 300px;
+    }
+
+    .card-title{
+        font-family: $ubuntuSansFont;
+        font-size: $mainTextFontSize-lg;
+        // color: black;
+    }
+    
+    .card-text{
+        font-family: $loraFont;
+        font-size: $cardTextFontSize-lg;
+    }
+
+    .card-title{
+        font-family: $ubuntuSansFont;
+        font-size: $mainTextFontSize-lg;
+        // color: black;
+    }
+    
+    .card-text{
+        font-family: $loraFont;
+        font-size: $cardTextFontSize-lg;
+    }
+
+    #sobre-mi{
+        position: relative;
+        right: 10%;
+    }
+}
+
+@media (min-width: 1750px){
+    .card {
+        height: 120px;
+        width: 400px;
+    }
+}

@@ -1,0 +1,105 @@
+@import "_vars";
+@import "_fonts";
+
+html{
+    font-size: $htmlFontSize;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+/*Backgrounds*/
+.bgColor{
+    background: $bgColor;
+}
+
+.bgTop{
+    background: $bgTopColor;
+    text-shadow: $darkShadow;
+}
+
+.logoImg{
+    height: auto;
+    width: auto;
+    animation:scale-in-center .5s 
+    cubic-bezier(.25,.46,.45,.94) both
+}
+
+/*Nav*/
+.navText{
+    font-family: $loraFont;
+    font-size: $navFontSize-lg;
+    text-shadow: $darkShadow;
+    color: $mainColor;
+        &:hover{
+            color: $navHoverColor;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            transform: scale(0.93);
+            animation:slide-top .5s 
+            cubic-bezier(.25,.46,.45,.94) both
+        }
+}
+
+ul{
+    li{
+        display: inline-block;
+        position: relative;
+        padding: 10px;
+    }
+}
+
+/*Footer*/
+footer{
+    vertical-align : top
+}
+
+#footerP{
+    font-size: $mainTextFontSize-lg;
+}
+
+h5{
+    font-size: $mainTextFontSize-lg;
+}
+
+.footerLink{
+    font-family: $ubuntuSerifFont;
+    color: $thirdColor;
+        &:hover{
+            color: $navHoverColor;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+}
+
+/*Sobre mi - Proyectos*/
+.pFormat{
+    font-family: $merriweatherFont;
+    font-size: $secondaryFontSize-lg;
+    color: $cardTitleColor;
+    font-style: italic;
+    text-shadow: $indexTitleShadow;
+}
+
+.projectName{
+    font-family: 'Silkscreen', cursive;
+    font-size: $mainTextFontSize-lg;
+    text-shadow: $indexTitleShadow;
+    color:$secondaryColor;
+}
+    
+.links{
+    font-family: 'Ubuntu', sans-serif;;
+    color: $secondaryColor;
+    font-size: $secondaryColor;
+    text-shadow: $linksShadow;
+}

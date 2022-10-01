@@ -1,0 +1,55 @@
+//Variables
+
+//Background Colors
+$bgColor: linear-gradient(#7aa5da,#e9eaf0);
+$bgTopColor: linear-gradient(#37485e,#607AA7);
+$bgGalleryColor: rgba(222, 202, 202, 0.62);
+$bgSectionsColor: linear-gradient(#4B5579,#131728);
+$bgCardHover: rgb(181, 229, 243);
+
+//Shadows
+$darkShadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
+$indexTitleShadow: 3px 4px 6px rgba(27, 10, 1, 0.8);
+$linksShadow: 3px 4px 6px rgba(17, 17, 199, 0.579);
+$formTextShadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
+$galleryShadow: 3px 4px 6px rgba(124, 124, 124, 0.696);
+$titlesShadow: 8px 6px 8px rgba(69, 67, 66, 0.545);
+
+//Fonts
+$silkscreenFont: 'Silkscreen', cursive;
+$ubuntuSerifFont: 'Ubuntu', serif;
+$ubuntuSansFont: 'Ubuntu', sans-serif;
+$merriweatherFont: 'Merriweather', serif;
+$loraFont:'Lora', serif;
+
+//Fonts Size
+$navFontSize-sm-md: 1.5rem;
+$navFontSize-lg: 2rem;
+$indexH1Size-sm: 4rem;
+$indexH2Size-sm: 2.5rem;
+$indexH1Size-md: 5rem;
+$indexH2Size-md: 3rem;
+$indexH1Size-lg: 6rem;
+$indexH2Size-lg: 4rem;
+$titlesFontSize-sm: 4rem;
+$titlesFontSize-md: 5rem;
+$titlesFontSize-lg: 6rem;
+$thirdTextFontSize-lg: 1.5rem; //Cards Tools, Carrousel
+$mainTextFontSize-lg: 3rem; //Cards Gallery, Footer, Form y ProjectName
+$secondaryFontSize-lg: 2rem; //Links, Parrafos
+$thirdTextFontSize-lg: 1.5rem; //Cards Gallery, Carrousel
+$textsFontSize-sm: 1.8rem; 
+$cardTextFontSize-lg: 1.1rem;
+$htmlFontSize: 62.5%;
+
+//Colors
+$mainColor: rgb(242, 241, 241); //Nav, Footer
+$secondaryColor: rgb(17, 1, 13); //H2Index, ProjectName, Links
+$thirdColor: white; //Formulario, Footer
+$navHoverColor: rgb(91, 158, 179); //Nav, Footer
+$titlesColor: rgb(242, 241, 241);
+$cardNameColor: rgb(40, 145, 210); //Cards Gallery
+$cardTitleColor: black; //Cards Tools
+
+
+
