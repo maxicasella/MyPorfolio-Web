@@ -24,12 +24,24 @@
     .pFormat{
         font-size: $textsFontSize-xs;
     }
+
+    #footerP{
+        font-size: $mainTextFontSize-xs;
+    }
+
+    .error404Img{
+        width: 100%;
+    }
 }
 
 @media (min-width: 400px) and (max-width: 768px){
     
     .logoImg{
         width: 75%;
+    }
+
+    .error404Img{
+        width: 100%;
     }
 
     .navText{
