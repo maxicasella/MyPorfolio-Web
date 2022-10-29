@@ -69,6 +69,7 @@ h5 {
 
 .footerLink {
   font-family: "Ubuntu", serif;
+  font-size: 1.5rem;
   color: white;
 }
 .footerLink:hover {

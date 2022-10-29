@@ -72,6 +72,7 @@ h5{
 
 .footerLink{
     font-family: $ubuntuSerifFont;
+    font-size: $footerLinksSize;
     color: $thirdColor;
         &:hover{
             color: $navHoverColor;
