@@ -1,5 +1,4 @@
 @import "_vars";
-@import "_fonts";
 
 html{
     font-size: $htmlFontSize;
@@ -14,7 +13,7 @@ body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 /*Backgrounds*/
