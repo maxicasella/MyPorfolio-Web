@@ -13,7 +13,6 @@ body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    // overflow-x: hidden;
 }
 
 /*Backgrounds*/
@@ -35,6 +34,15 @@ body{
     width: auto;
     animation:scale-in-center .5s 
     cubic-bezier(.25,.46,.45,.94) both
+}
+
+.titleText{
+    font-family: $ubuntuSerifFont;
+    font-size: $titlesFontSize-lg;
+    color: $mainColor;
+    padding: 4px;
+    text-align: center;
+    text-shadow: $titlesShadow;
 }
 
 /*Nav*/
@@ -63,26 +71,23 @@ ul{
 
 /*Footer*/
 footer{
-    vertical-align : top
-}
-
-#footerP{
-    font-size: $mainTextFontSize-lg;
-}
-
-h5{
-    font-size: $mainTextFontSize-lg;
-}
-
-.footerLink{
-    font-family: $ubuntuSerifFont;
-    font-size: $footerLinksSize;
-    color: $thirdColor;
-        &:hover{
-            color: $navHoverColor;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
+    vertical-align : top;
+    h5{
+        font-size: $mainTextFontSize-lg;
+    }
+    #footerP{
+        font-size: $mainTextFontSize-md;
+    }
+    .footerLink{
+        font-family: $ubuntuSerifFont;
+        font-size: $footerLinksSize;
+        color: $thirdColor;
+            &:hover{
+                color: $navHoverColor;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+    }
 }
 
 /*Sobre mi - Proyectos*/
@@ -103,8 +108,7 @@ h5{
     
 .links{
     font-family: 'Ubuntu', sans-serif;;
+    font-size: $secondaryFontSize-lg;
     color: $secondaryColor;
-    font-size: $secondaryColor;
     text-shadow: $linksShadow;
 }
-

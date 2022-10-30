@@ -2,22 +2,6 @@
 
 
 /* Galeria */
-.bgCard{
-    background-color: $bgGalleryColor;
-}
-.cardName{
-    font-family: $silkscreenFont;
-    font-size: $mainTextFontSize-lg;
-    color: $cardNameColor;
-    text-shadow: $galleryShadow;
-}
-
-.cardText{
-    font-family: $ubuntuSerifFont;
-    font-size: $thirdTextFontSize-lg;
-    color: $cardTitleColor;
-}
-
 .galleryLinks{
     font-family: $loraFont;
     color: $secondaryColor;
@@ -26,34 +10,50 @@
 }
 
 /*Herramientas*/
-
-.cardFormat{
+.bgToolsCard{
     border-radius: 5px;
     background: $bgSectionsColor;
     margin: auto;
 }
 
+/*Tarjetas: Galeria y herramientas*/
+.col{
+    display: flex;
+    justify-content: center;
+    .bgGalleryCard{
+        background-color: $bgGalleryColor;
+    }
+}
+
 .card{
+    border-radius: 5px;
+    margin: auto;
     &:hover{
         background: $bgCardHover;
         cursor: pointer;
         transition: all 0.3s ease;
         transform: scale(1.01);
     }
-}
-
-.card-title{
-    font-family: $ubuntuSansFont;
-    font-size: $mainTextFontSize-lg;
-    color: $cardTitleColor;
-}
-
-.card-text{
-    font-family: $loraFont;
-    font-size: $cardTextFontSize-lg;
-}
-
-.col{
-    display: flex;
-    justify-content: center;
+    /*Gallery Cards*/
+    .cardName{
+        font-family: $silkscreenFont;
+        font-size: $mainTextFontSize-lg;
+        color: $cardNameColor;
+        text-shadow: $galleryShadow;
+    }
+    .cardText{
+        font-family: $ubuntuSerifFont;
+        font-size: $thirdTextFontSize-lg;
+        color: $cardTitleColor;
+    }
+    /*Tools Cards*/
+    .card-title{
+        font-family: $ubuntuSansFont;
+        font-size: $mainTextFontSize-lg;
+        color: $cardTitleColor;
+    }
+    .card-text{
+        font-family: $loraFont;
+        font-size: $cardTextFontSize-lg;
+    }
 }

@@ -37,6 +37,15 @@ body {
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.titleText {
+  font-family: "Ubuntu", serif;
+  font-size: 5rem;
+  color: rgb(242, 241, 241);
+  padding: 4px;
+  text-align: center;
+  text-shadow: 8px 6px 8px rgba(69, 67, 66, 0.545);
+}
+
 /*Nav*/
 .navText {
   font-family: "Lora", serif;
@@ -44,6 +53,7 @@ body {
   text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
   color: rgb(242, 241, 241);
 }
+
 .navText:hover {
   color: rgb(91, 158, 179);
   cursor: pointer;
@@ -63,20 +73,21 @@ footer {
   vertical-align: top;
 }
 
-#footerP {
+footer h5 {
   font-size: 3rem;
 }
 
-h5 {
-  font-size: 3rem;
+footer #footerP {
+  font-size: 2.5rem;
 }
 
-.footerLink {
+footer .footerLink {
   font-family: "Ubuntu", serif;
   font-size: 1.5rem;
   color: white;
 }
-.footerLink:hover {
+
+footer .footerLink:hover {
   color: rgb(91, 158, 179);
   cursor: pointer;
   transition: all 0.2s ease;
@@ -100,15 +111,15 @@ h5 {
 
 .links {
   font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
   color: rgb(17, 1, 13);
-  font-size: rgb(17, 1, 13);
   text-shadow: 3px 4px 6px rgba(17, 17, 199, 0.579);
 }
 
 /*Index*/
 .h1Index {
   font-family: "Silkscreen", cursive;
-  font-size: 6rem;
+  font-size: 5rem;
   color: rgb(242, 241, 241);
   padding: 6px;
   text-align: center;
@@ -117,7 +128,7 @@ h5 {
 
 .h2Index {
   font-family: "Silkscreen", cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: rgb(17, 1, 13);
   padding: 4px;
   text-align: center;
@@ -131,33 +142,7 @@ h5 {
   padding-bottom: 10px;
 }
 
-.titleText {
-  font-family: "Ubuntu", serif;
-  font-size: 6rem;
-  color: rgb(242, 241, 241);
-  padding: 4px;
-  text-align: center;
-  text-shadow: 8px 6px 8px rgba(69, 67, 66, 0.545);
-}
-
 /* Galeria */
-.bgCard {
-  background-color: rgba(222, 202, 202, 0.62);
-}
-
-.cardName {
-  font-family: "Silkscreen", cursive;
-  font-size: 3rem;
-  color: rgb(40, 145, 210);
-  text-shadow: 3px 4px 6px rgba(124, 124, 124, 0.696);
-}
-
-.cardText {
-  font-family: "Ubuntu", serif;
-  font-size: 1.5rem;
-  color: black;
-}
-
 .galleryLinks {
   font-family: "Lora", serif;
   color: rgb(17, 1, 13);
@@ -166,10 +151,27 @@ h5 {
 }
 
 /*Herramientas*/
-.cardFormat {
+.bgToolsCard {
   border-radius: 5px;
   background: linear-gradient(#4B5579, #131728);
   margin: auto;
+}
+
+/*Tarjetas: Galeria y herramientas*/
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.col .bgGalleryCard {
+  background-color: rgba(222, 202, 202, 0.62);
+}
+
+.card {
+  border-radius: 5px;
+  margin: auto;
+  /*Gallery Cards*/
+  /*Tools Cards*/
 }
 
 .card:hover {
@@ -179,48 +181,54 @@ h5 {
   transform: scale(1.01);
 }
 
-.card-title {
+.card .cardName {
+  font-family: "Silkscreen", cursive;
+  font-size: 3rem;
+  color: rgb(40, 145, 210);
+  text-shadow: 3px 4px 6px rgba(124, 124, 124, 0.696);
+}
+
+.card .cardText {
+  font-family: "Ubuntu", serif;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.card .card-title {
   font-family: "Ubuntu", sans-serif;
   font-size: 3rem;
   color: black;
 }
 
-.card-text {
+.card .card-text {
   font-family: "Lora", serif;
   font-size: 1.1rem;
 }
 
-.col {
-  display: flex;
-  justify-content: center;
-}
-
 /*Formulario*/
-.vertical {
-  display: flex;
-  align-items: center;
-}
-
-.form-format {
-  border-radius: 5px;
-  background: linear-gradient(#4B5579, #131728);
-  margin: auto;
-  padding: 15px;
-}
-
-.form-format-align {
-  text-align: center;
-}
-
 .formulario {
   padding: 0;
 }
+
 .formulario h2 {
   font-family: "Lora", serif;
   font-size: 3rem;
   color: white;
   letter-spacing: 5px;
   text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
+}
+
+.formulario p {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
+}
+
+.formulario .vertical {
+  display: flex;
+  align-items: center;
 }
 
 .formulario label {
@@ -231,43 +239,78 @@ h5 {
   text-shadow: 2px 3px 4px rgba(16, 5, 28, 0.8);
 }
 
+.formulario .form-format {
+  border-radius: 5px;
+  background: linear-gradient(#4B5579, #131728);
+  margin: auto;
+  padding: 15px;
+}
+
+.form-format-align {
+  text-align: center;
+}
+
 /*Ajustes medidas dispositivos */
 @media (min-width: 200px) and (max-width: 400px) {
   .h1Index {
     font-size: 2.5rem;
     padding: 3px;
   }
+
   .h2Index {
     font-size: 2rem;
     padding: 3px;
   }
+  
   .titleText {
     font-size: 2rem;
   }
+
   .projectName {
     font-size: 2rem;
   }
+
   .pFormat {
     font-size: 1.4rem;
   }
+
   #footerP {
     font-size: 2rem;
   }
+
   .error404Img {
     width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    height: 180px;
+    width: 500px;
+  }
+
+  .card .card-title {
+    font-size: 2.5rem;
+  }
+
+  .card .cardName {
+    font-size: 2.5rem;
   }
 }
+
 @media (min-width: 400px) and (max-width: 768px) {
   .logoImg {
     width: 75%;
   }
+
   .error404Img {
     width: 100%;
   }
+
   .navText {
     font-family: "Lora", serif;
     font-size: 1.5rem;
   }
+
   .navText:hover {
     color: rgb(91, 158, 179);
     cursor: pointer;
@@ -275,139 +318,164 @@ h5 {
     transform: scale(0.98);
     animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
+
   .h1Index {
     font-family: "Silkscreen", cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 6px;
     text-align: center;
   }
+
   .h2Index {
     font-family: "Silkscreen", cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 4px;
     text-align: center;
   }
+
   .titleText {
-    font-size: 4rem;
+    font-size: 3rem;
   }
+
+  .projectName {
+    font-size: 2.5rem;
+  }
+
   .sobreMiText {
     font-family: "Merriweather", serif;
     font-size: 1.8rem;
     font-style: italic;
   }
+
   video {
     width: 90%;
   }
+
   ul li {
     padding: 5px;
   }
+
   .card {
     height: 150px;
     width: 400px;
   }
+
   #footerP {
     font-size: 1.5rem;
   }
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
   .logoImg {
     width: 50%;
   }
+
   .navText {
     font-family: "Lora", serif;
     font-size: 1.5rem;
   }
+
   .navText:hover {
     cursor: pointer;
     transition: all 0.05s ease;
     transform: scale(0.98);
   }
+
   .h1Index {
     font-family: "Silkscreen", cursive;
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 6px;
     text-align: center;
   }
+
   .h2Index {
     font-family: "Silkscreen", cursive;
     font-size: 3rem;
     padding: 4px;
     text-align: center;
   }
+
   .titleText {
-    font-size: 5rem;
+    font-size: 4rem;
   }
+
   ul li {
     padding: 5px;
   }
+
   .card {
     height: 120px;
     width: 260px;
   }
-  .card-title {
+  
+  .card .card-title {
     font-family: "Ubuntu", sans-serif;
     font-size: 2rem;
   }
-  .card-text {
+
+  .card .card-text {
     font-family: "Lora", serif;
     font-size: 1.1rem;
   }
+
   #footerP {
     font-size: 2rem;
   }
 }
+
 @media (min-width: 992px) {
   .card {
     height: 120px;
     width: 250px;
   }
-  .card-title {
+
+  .card .card-title {
     font-family: "Ubuntu", sans-serif;
     font-size: 2rem;
   }
-  .card-text {
+
+  .card .card-text {
     font-family: "Lora", serif;
     font-size: 1.1rem;
   }
 }
+
 @media (min-width: 1200px) {
   #cv {
     position: relative;
     left: 10%;
   }
 }
+
 @media (min-width: 1400px) {
   .card {
     height: 120px;
     width: 300px;
   }
-  .card-title {
+
+  .card .card-title {
     font-family: "Ubuntu", sans-serif;
     font-size: 3rem;
   }
-  .card-text {
+
+  .card .card-text {
     font-family: "Lora", serif;
     font-size: 1.1rem;
   }
-  .card-title {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 3rem;
-  }
-  .card-text {
-    font-family: "Lora", serif;
-    font-size: 1.1rem;
-  }
+
   #sobre-mi {
     position: relative;
     right: 10%;
   }
 }
+
 @media (min-width: 1750px) {
   .card {
     height: 120px;
     width: 400px;
   }
 }
+
 /*Animaciones*/
 @keyframes slide-top {
   0% {
@@ -420,6 +488,7 @@ h5 {
     transform: translateY(-10px);
   }
 }
+
 @keyframes scale-in-center {
   0% {
     transform: scale(0);
@@ -430,6 +499,7 @@ h5 {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -442,6 +512,7 @@ h5 {
     opacity: 1;
   }
 }
+
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -454,6 +525,7 @@ h5 {
     opacity: 1;
   }
 }
+
 .tracking-in-expand {
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -471,6 +543,7 @@ h5 {
     opacity: 1;
   }
 }
+
 @keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -483,6 +556,7 @@ h5 {
     opacity: 1;
   }
 }
+
 .slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
