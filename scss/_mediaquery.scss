@@ -2,7 +2,10 @@
 
 /*Ajustes medidas dispositivos */
 @media (min-width: 200px) and (max-width: 400px){
-
+    
+    .logoImg{
+        width: 40%;
+    }
     .h1Index{
         font-size: $indexH1Size-xs;
         padding: 3px;
@@ -49,7 +52,7 @@
 @media (min-width: 400px) and (max-width: 768px){
     
     .logoImg{
-        width: 75%;
+        width: 50%;
     }
 
     .error404Img{
